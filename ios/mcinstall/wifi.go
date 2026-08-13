@@ -47,8 +47,7 @@ func PrepareWifi(device ios.DeviceEntry, ssid string, psw string, encType string
 		golog.Debug("ignoring expected CertificateRejected error", "module", logModule, "udid", device.Properties.SerialNumber, "error", err)
 	}
 
-	safeSSID := sanitizeIdentifier(ssid)
-	profileId := fmt.Sprintf("com.apple.wifi.managed.%s", safeSSID)
+	profileId := fmt.Sprintf("com.apple.wifi.managed.wecan.wifi.config")
 
 	// SSID/password are user-controlled, so XML-escape them before they go into
 	// the plist; the two PayloadUUIDs are derived from the SSID so each network
