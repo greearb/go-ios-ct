@@ -206,6 +206,22 @@ const wifiProfileTemplate = `
             <key>PayloadVersion</key>
             <integer>1</integer>
         </dict>
+		  <dict>
+		      <key>PayloadDescription</key>
+		      <string>Configures Restrictions</string>
+		      <key>PayloadDisplayName</key>
+		      <string>Restrictions</string>
+		      <key>PayloadIdentifier</key>
+		      <string>com.apple.applicationaccess.BCD92F90-781D-4CD2-A47C-52AAE59A5A79</string>
+		      <key>PayloadType</key>
+		      <string>com.apple.applicationaccess</string>
+		      <key>PayloadUUID</key>
+		      <string>BCD92F90-781D-4CD2-A47C-52AAE59A5A79</string>
+		      <key>PayloadVersion</key>
+		      <integer>1</integer>
+		      <key>forceWiFiToAllowedNetworksOnly</key>
+		      <true/>
+		  </dict>
     </array>
     <key>PayloadIdentifier</key>
     <string>%s</string>
